@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0169acd3c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/31.png" alt="logo" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>A Web Developer</p>
+                <h1>Hi! I'm <span>Gourav</span> Barman <br> From India.</h1>
+            </div>
+            <div class="pho">
+                <img src="images/front.png" alt="photo of me">
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------about section ----------- -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="images/imgg1.png">
+                </div>
+                <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                     <p>Highly motivated aspiring web developer seeking opportunities to utilize
+                         strong programming skills and passion for problem-solving. Proficient in
+                          multiple programming languages and frameworks, with a strong understanding
+                           of web development principles. Eager to contribute to innovative projects and 
+                           collaborate with talented teams. Open to learning new technologies and continuously
+                            improving coding abilities.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>React Js , JavaScript , HTML  </span><br>
+                            Designing Web Interface</li>
+                            <li><span>SQL , MongoDB </span><br>
+                                Managing The Database Part</li>
+                                <li><span> C++ , Java , DSA</span><br>
+                                    Managing The Backend Part</li>
+                        </ul>
+                     </div> 
+
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current </span><br>
+                            Learning From the College</li>
+                            <li><span>2019 - 2022 </span><br>
+                                Learn through myself</li>
+                                <li><span> begin from the 2016 </span><br>
+                                    Internship at MDIT</li>
+                        </ul>
+                     </div>  
+                     
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>
+                            Master Computer Application From LPU</li>
+                            <li><span> 2019 -2022 </span><br>
+                                Bachelor Of Computer Application </li>
+                                <li><span> 2018 - 2019 </span><br>
+                                    12th from MP Board</li>
+                        </ul>
+                     </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- services------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        As a web developer, I offer a comprehensive 
+                        suite of services to My clients to meet their
+                         diverse needs. This includes website design and 
+                         development tailored to their specific requirements, 
+                         ensuring a visually appealing and user-friendly online 
+                         presence. You provide expertise in creating custom 
+                         functionalities, such as e-commerce solutions, content
+                          management systems (CMS), and web applications, to 
+                          enhance their website's functionality. Additionally, 
+                          I offer services in website maintenance, ensuring 
+                          ongoing performance optimization, security updates, 
+                          and technical support. My focus on responsive 
+                          design and SEO optimization ensures their website 
+                          is accessible and visible across various devices and
+                           search engines, ultimately driving traffic and 
+                           engagement.
+                    </p>
+                    <a href="https://www.betterteam.com/web-designer-job-description">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2>Deployment </h2>
+                    <p>
+                        
+                      As a software deployer, my services 
+                      are focused on the efficient and seamless 
+                      deployment of software solutions for my clients. 
+                      I offer consultation and planning to understand 
+                      their requirements and infrastructure. My expertise 
+                      includes configuration management, deployment automation,
+                       and version control, ensuring smooth implementation 
+                       across various platforms and environments. I provide 
+                       deployment testing to verify functionality and 
+                       compatibility, minimizing disruptions and risks. 
+                       Additionally, I offer training and support to facilitate
+                        user adoption and troubleshooting. My services encompass
+                         continuous monitoring and updates to ensure ongoing 
+                         performance and security, enabling clients to leverage 
+                         software solutions effectively for their business 
+                         objectives.
+                    </p>
+                    <a href="https://www.sumologic.com/glossary/software-deployment/">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-pen-ruler"></i>
+                    <h2>Algorithm Design</h2>
+                    <p>
+                     
+                   As an algorithm designer, my services revolve 
+                   around crafting efficient and effective algorithms
+                    tailored to address specific needs and challenges 
+                    for my clients. I offer consultation and analysis 
+                    to understand their requirements and objectives 
+                    thoroughly. My expertise lies in designing algorithms 
+                    for data processing, optimization, pattern recognition,
+                     and problem-solving across various domains such as
+                      finance, healthcare, and logistics. I provide 
+                      algorithm implementation, integration, and testing 
+                      services, ensuring seamless integration into their 
+                      existing systems or applications. Moreover, I offer
+                       ongoing support and refinement to optimize algorithm
+                        performance, scalability, and adaptability, 
+                        empowering my clients to achieve their goals with 
+                        precision and agility.
+                    </p>
+                    <a href="https://www.greatsampleresume.com/job-responsibilities/data-systems-administration/algorithm-engineer">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- my work --------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pot.png" alt="first">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>My portfolio web app is a showcase for my skills and projects, 
+                            built with HTML, CSS, and JavaScript. The app features a modern, 
+                            responsive design with a clean layout and easy navigation. 
+                            It highlights your contact information, skills, and complete 
+                            projects with descriptions, images, and links. The app supports
+                             a projects filter, allowing visitors to browse through your work 
+                             by categories. The portfolio is mobile-friendly, visually appealing 
+                             with customizable CSS, and accessible for beginners through a detailed
+                              blog post and a YouTube video tutorial. The provided code snippets include
+                               HTML structure, CSS styles, and JavaScript functionality. With the app's 
+                               seamless integration of DOM manipulation, event handling, and CSS styling, 
+                               it offers an excellent opportunity for developers to learn and practice web 
+                               development skills while exploring your portfolio.
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/we.png" alt="first">
+                    <div class="layer">
+                        <h3>Weather Web App</h3>
+                        <p>I have developed a weather web app using HTML, CSS, 
+                            JavaScript, and an API. The app allows users to search
+                             for the weather forecast of any city by entering 
+                              name of the citys. It displays temperature, wind speed, 
+                              humidity, and weather description. The app is
+                               visually appealing with customizable CSS.
+                                The provided code snippets include HTML structure, CSS styles, and
+                                 JavaScript functionality using the OpenWeatherMap API. The app's 
+                                 seamless integration of API, DOM manipulation, event handling, and
+                                  CSS styling makes it an ideal project for learning and practicing 
+                                  web development skills.
+                            <a href="https://gouravbarman.github.io/weatherAppJs/"><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/what.png" alt="first">
+                    <div class="layer">
+                        <h3>Whatsapp Cloan </h3>
+                        <p>I have developed a project that clones the functionality 
+                            of WhatsApp using Java, Java Swings, and networking.
+                             Although the specific details of your project are not 
+                             provided, I can give you an overview based on the technologies
+                              I have mentioned. My WhatsApp clone is a chat 
+                              application that allows users to communicate with 
+                              each other in real-time over a network. 
+                              You have used Java as the primary programming 
+                              language for developing the backend logic of the
+                               application. Java Swings have been used for creating 
+                               the user interface of the application, providing a smooth
+                                and interactive experience for the users.To enable real-time
+                                 communication between users, I have implemented 
+                                 networking functionality in my project. This would
+                                  involve setting up a server that manages the 
+                                  communication between different clients (users) and
+                                   handles the transfer of messages between them.
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+            </div>
+    </div>
+
+
+    <!-- ------------------Contact------------------ -->
+
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>gouravbarman04@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>82********</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/marvelous_gourav?igsh=MWIxdGtxbzNiczhhbQ==">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gouravbarman0404/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/GouravBarman?tab=repositories">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="images/newly.pdf" download  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <footer id="foot">
+        <div class="copyright">
+            <p>copyright @ Gourav  Barman <i class="fa-solid fa-heart"></i> | All Rights Reserved</p>
+            </div>
+     </footer>
+     
+     <script src="script.js"></script>
+</body>
+</html>
